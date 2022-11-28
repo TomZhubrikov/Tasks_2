@@ -4,4 +4,13 @@
 // 7 -> да
 // 1 -> нет
 
-Console.WriteLine("Hello, World!");
+bool F = true;
+while (F) {
+    Console.WriteLine("Enter a number [1; 7]: ");
+    int n = int.Parse(Console.ReadLine());
+    if (n >= 1 && n <= 7 ) {
+        if (n == 6 || n == 7) Console.WriteLine("Yes!");
+        else Console.WriteLine("No!");
+        F = false;
+    }
+}

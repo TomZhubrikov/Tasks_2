@@ -4,4 +4,8 @@
 // 782 -> 8
 // 918 -> 1
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Enter a number: ");
+int n = int.Parse(Console.ReadLine());
+int n_10 = n / 10;
+int res = n_10 % 10;
+Console.WriteLine($"Second digit of the number -> {res}");
